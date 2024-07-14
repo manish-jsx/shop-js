@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="marketplace.html">Marketplace</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+                <li id="cart-icon">
+                    <a href="#" id="open-cart-modal">
+                        <img src="../images/shopping-cart-icon.png" alt="Shopping Cart">
+                        <span id="cart-count">0</span> <!-- Initial cart count -->
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <h1>Checkout</h1>
+        <div id="checkout-steps" class="checkout-steps">
+            <!-- Checkout steps will be dynamically added here -->
+        </div>
+        <div id="cart-items">
+            <!-- Cart items will be dynamically added here -->
+        </div>
+        <div id="total">
+            <h2>Total: $<span id="total-amount">0.00</span></h2>
+        </div>
+        <div class="navigation-buttons">
+            <button id="prev-step-btn" disabled>Previous Step</button>
+            <button id="next-step-btn">Next Step</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Shopping Web App</p>
+    </footer>
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Your Shopping Cart</h2>
+            <div id="cart-items-modal"></div>
+            <p>Total: $<span id="cart-total-modal">0.00</span></p>
+            <div class="modal-buttons">
+                <button id="continue-shopping-btn">Continue Shopping</button>
+                <button id="checkout-btn">Checkout</button>
+            </div>
+        </div>
+    </div>
+    <script src="../js/checkout.js"></script>
+    <script src="../js/cart.js"></script>
+</body>
+</html>

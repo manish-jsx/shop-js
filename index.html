@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Web App</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pages/marketplace.html">Marketplace</a></li>
+                <li><a href="pages/checkout.html">Checkout</a></li>
+                <!-- Add a shopping cart icon with product count -->
+                <li id="cart-icon">
+                    <a href="#" id="open-cart-modal">
+                        <img src="images/shopping-cart-icon.png" alt="Shopping Cart">
+                        <span id="cart-count">0</span> <!-- Initial cart count -->
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to IoT Shopping</h1>
+                <p>Discover the latest in smart devices for your home.</p>
+                <a href="pages/marketplace.html" class="btn">Explore Now</a>
+            </div>
+        </section>
+
+        <section class="featured-products">
+            <h2>Featured Products</h2>
+            <div class="product-list">
+                <!-- Example product card -->
+                <div class="product-card">
+                    <img src="images/smart_door_lock.jpeg" alt="Smart Door Lock">
+                    <h3>Smart Door Lock</h3>
+                    <p>$29.99</p>
+                    <button onclick="addToCart(1)">Add to Cart</button>
+                </div>
+                
+                <!-- Add more product cards as needed -->
+
+                <div class="product-card">
+                    <img src="images/smart_door_lock.jpeg" alt="Smart Door Lock">
+                    <h3>Smart Door Lock</h3>
+                    <p>$29.99</p>
+                    <button onclick="addToCart(1)">Add to Cart</button>
+                </div>
+
+            
+        </section>
+
+        <section class="about">
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in felis in justo elementum blandit.</p>
+            <a href="#" class="btn">Learn More</a>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Shopping Web App</p>
+    </footer>
+
+    <!-- Modal HTML -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Your Shopping Cart</h2>
+            <div id="cart-items-modal"></div>
+            <p>Total: $<span id="cart-total-modal">0.00</span></p>
+            <div class="modal-buttons">
+                <button id="continue-shopping-btn">Continue Shopping</button>
+                <button id="checkout-btn">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/cart.js"></script>
+</body>
+</html>

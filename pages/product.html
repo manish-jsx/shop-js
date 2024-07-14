@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="../css/product.css">
+</head>
+<body>
+  <header>
+    <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+            <li><a href="marketplace.html">Marketplace</a></li>
+            <li><a href="checkout.html">Checkout</a></li>
+            <!-- Add a shopping cart icon with product count -->
+             <!-- Update to open cart modal -->
+             <li id="cart-icon">
+              <a href="#" id="open-cart-modal">
+                  <img src="../images/shopping-cart-icon.png" alt="Shopping Cart">
+                  <span id="cart-count">0</span> <!-- Initial cart count -->
+              </a>
+          </li>
+        </ul>
+    </nav>
+</header>
+    <main>
+        <h1>Product Details</h1>
+        <div id="product-details" class="product-details">
+            <img id="product-image" src="../images/smart_thermostat.jpg" alt="Smart Thermostat">
+            <div class="product-info">
+                <h2 id="product-name">Smart Thermostat</h2>
+                <p id="product-description">High-quality smart thermostat with a digital display for efficient home temperature control.</p>
+                <p id="product-price">$99.99</p>
+                <button id="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Shopping Web App</p>
+    </footer>
+
+   
+
+    <script src="../js/product.js"></script>
+    <script src="../js/cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,233 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  padding: 2rem;
+}
+
+footer {
+  
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.product {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 16px;
+  text-align: center;
+  margin: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+  width: 200px; /* Set a fixed width */
+  height: 200px; /* Set a fixed height */
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+.product h2 {
+  font-size: 1.5rem;
+  margin: 16px 0;
+}
+
+.product p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.product a {
+  display: inline-block;
+  padding: 8px 16px;
+  margin-top: 16px;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.product a:hover {
+  background-color: #555;
+}
+
+
+/* Example styles for shopping cart icon */
+#cart-icon {
+  position: relative;
+  padding: 10px;
+}
+
+#cart-icon img {
+  width: 30px;
+  height: auto;
+}
+
+#cart-count {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  border-radius: 50%;
+  padding: 4px 8px;
+}
+
+
+/* Modal styles */
+.modal {
+  display: none; /* Hide modal by default */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* Center modal on screen */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+}
+
+.modal-content .close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal-content .close:hover,
+.modal-content .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-buttons {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.modal-buttons button {
+  margin: 5px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.modal-buttons button:hover {
+  background-color: #45a049;
+}
+.product-card {
+  flex: 0 0 calc(33.33% - 20px); /* 33.33% width with margin */
+  max-width: calc(33.33% - 20px);
+  margin: 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.product-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.product-card p {
+  font-size: 1rem;
+  color: #888;
+  margin-bottom: 12px;
+}
+
+.product-card button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.product-card button:hover {
+  background-color: #0056b3;
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 1024px) {
+  .product-card {
+      flex-basis: calc(50% - 20px); /* 50% width with margin */
+      max-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .product-card {
+      flex-basis: calc(100% - 20px); /* Full width with margin */
+      max-width: calc(100% - 20px);
+  }
+}
+
+.product-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  
+
+}
