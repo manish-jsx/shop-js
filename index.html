@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping Web App</title>
     <link rel="stylesheet" href="css/style.css">
+
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.0/build/spline-viewer.js"></script>
+
 </head>
 <body>
     <header>
@@ -30,19 +33,17 @@
                 <p>Discover the latest in smart devices for your home.</p>
                 <a href="pages/marketplace.html" class="btn">Explore Now</a>
             </div>
+            <!-- Spline 3D embed -->
+            <div class="spline-container">
+                <spline-viewer url="https://prod.spline.design/VTKInxCt0J-jui6J/scene.splinecode"></spline-viewer>
+            </div>
         </section>
 
         <section class="featured-products">
             <h2>Featured Products</h2>
             <div class="product-list">
                 <!-- Example product card -->
-                <div class="product-card">
-                    <img src="images/smart_door_lock.jpeg" alt="Smart Door Lock">
-                    <h3>Smart Door Lock</h3>
-                    <p>$29.99</p>
-                    <button onclick="addToCart(1)">Add to Cart</button>
-                </div>
-                
+               
                 <!-- Add more product cards as needed -->
 
                 <div class="product-card">
@@ -52,14 +53,24 @@
                     <button onclick="addToCart(1)">Add to Cart</button>
                 </div>
 
-            
+                <div class="product-card">
+                    <img src="images/smart_door_lock.jpeg" alt="Smart Door Lock">
+                    <h3>Smart Door Lock</h3>
+                    <p>$29.99</p>
+                    <button onclick="addToCart(1)">Add to Cart</button>
+                </div>
+            </div>
         </section>
 
         <section class="about">
-            <h2>About Us</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in felis in justo elementum blandit.</p>
-            <a href="#" class="btn">Learn More</a>
-        </section>
+            <section class="about">
+                <h2>About Us</h2>
+                <p>Welcome to [Your Company Name], where innovation meets quality. Founded in [Year], we have been dedicated to providing top-notch smart home solutions that make your life easier and more efficient. Our team of experts works tirelessly to bring you the latest in smart technology, ensuring that our products are not only cutting-edge but also user-friendly and reliable.</p>
+                <p>At [Your Company Name], we believe in the power of technology to transform homes and improve everyday living. Our product range includes smart thermostats, light bulbs, door locks, security cameras, plugs, speakers, and smoke detectors, each designed with your convenience and safety in mind. We are committed to delivering exceptional customer service and support, making sure you get the most out of our products.</p>
+                <p>Join us on our journey to create a smarter, more connected world. Discover how our smart home solutions can enhance your home, save energy, and provide peace of mind. Thank you for choosing [Your Company Name] – your partner in smart living.</p>
+                <a href="#" class="btn">Learn More</a>
+              </section>
+              
     </main>
     <footer>
         <p>&copy; 2024 Shopping Web App</p>

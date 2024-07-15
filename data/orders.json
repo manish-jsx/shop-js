@@ -1,0 +1,16 @@
+[
+  {
+      "id": 1,
+      "customerName": "John Doe",
+      "orderDate": "2024-07-01",
+      "status": "Completed",
+      "total": 200.99
+  },
+  {
+      "id": 2,
+      "customerName": "Jane Smith",
+      "orderDate": "2024-07-05",
+      "status": "Pending",
+      "total": 150.50
+  }
+]
