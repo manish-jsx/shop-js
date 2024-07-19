@@ -1,0 +1,73 @@
+/* checkout-progress.css */
+.mainWrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.statusBar {
+  position: relative;
+  width: 100%;
+  height: 5px;
+  background-color: #ddd;
+}
+
+.pBar {
+  position: absolute;
+  width: 0;
+  height: 100%;
+  background-color: #4caf50;
+}
+
+.node {
+  position: absolute;
+  top: -10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.node .main {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ddd;
+}
+
+.node .text {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #666;
+}
+
+.node.done .main,
+.node.done .text {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+/* Specific positions for each step node */
+.node.n0 { left: 0%; }
+.node.n1 { left: 25%; }
+.node.n2 { left: 50%; }
+.node.n3 { left: 75%; }
+.node.n4 { left: 100%; }
+
+.buttonHolder {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.button.disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
